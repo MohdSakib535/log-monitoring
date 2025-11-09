@@ -6,7 +6,7 @@ from sqlalchemy import func
 
 from ..models import LogEntry
 
-
+print("vicky")
 def counts_by_level(session: Session, window: timedelta) -> Dict[str, int]:
     since = datetime.utcnow() - window
     rows = (
