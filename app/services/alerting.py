@@ -5,7 +5,7 @@ from sqlalchemy import func
 
 from ..models import AlertRule, AlertEvent, LogEntry
 
-
+print("hekk sakib")
 def _count_logs(session: Session, since: datetime, level: Optional[str]) -> int:
     q = session.query(func.count(LogEntry.id)).filter(LogEntry.timestamp >= since)
     if level:
